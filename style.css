@@ -1,0 +1,82 @@
+.buttonSize {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-image: url(Images/Temp_Icon.png);
+  margin: auto;
+
+  outline: none;
+  border: none;
+}
+
+.center {
+  display: flex;
+  padding-top: 20em;
+  justify-content: center;
+}
+
+#clickDisplay {
+  text-align: center;
+  color: aliceblue;
+
+  margin-left: 12em;
+  margin-right: 12em;
+  border-radius: 1em;
+  font-family: cursive;
+  font-size: 2em;
+  background-color: black;
+}
+
+body {
+  background-color: grey;
+}
+
+.progressContainer {
+  width: 300px;
+  height: 25px;
+  background-color: midnightblue;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: visible;
+  position: relative;
+  cursor: pointer;
+}
+.progressBar {
+  width: 0%;
+  height: 100%;
+
+  background-color: rgb(196, 5, 5);
+  transition: width 0.3s ease;
+  pointer-events: none;
+  display: block;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  position: absolute;
+  z-index: 99999;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
